@@ -231,7 +231,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 
 1. Clone the repository
 2. Navigate to the project directory
-3. Create `.env` file in the root directory according to the [.env.example](./example.env) file
+3. Create `.env` file in the root directory according to the [example.env](./example.env) file
 4. Install the dependencies
 
 - `❯ npm i`
