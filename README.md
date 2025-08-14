@@ -9,8 +9,11 @@
 - Postman
 </list>
 
-API Documentation
-<API>
+<details>
+
+<summary>
+##API Documentation
+</summary>
 
 ### Authentication Endpoints
 
@@ -217,7 +220,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 2. **Login**: POST `/auth/login` with email/username and password
 3. **Use JWT**: Include `Authorization: Bearer <token>` header for protected endpoints
 
-</API>
+</details>
 
 ## Postman Collection
 
