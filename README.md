@@ -1,15 +1,16 @@
 #Pet project showcasing a Dockerized MongoDB setup and a basic NestJS application for database interaction.
 
 ## Tech Stack
-
+<list>
 - NestJS
 - MongoDB
 - Docker
 - Docker Compose
 - Postman
+</list>
 
-<## API Documentation>
-
+API Documentation
+<API>
 
 ### Authentication Endpoints
 
@@ -216,7 +217,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
 2. **Login**: POST `/auth/login` with email/username and password
 3. **Use JWT**: Include `Authorization: Bearer <token>` header for protected endpoints
 
-</## API Documentation>
+</API>
 
 ## Postman Collection
 
