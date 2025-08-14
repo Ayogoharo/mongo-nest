@@ -3,11 +3,21 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
-
-const url = process.env.MONGO_URL || 'mongodb://localhost/nest';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 
 @Module({
-  imports: [MongooseModule.forRoot(url), UsersModule],
+  imports: [
+    ConfigModule.forRoot(),
+    MongooseModule.forRootAsync({
+      useFactory: (configService: ConfigService) => ({
+        uri: configService.get<string>('MONGO_URL'),
+        dbName: 'data',
+      }),
+      imports: [ConfigModule],
+      inject: [ConfigService],
+    }),
+    UsersModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
