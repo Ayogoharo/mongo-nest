@@ -1,19 +1,20 @@
 #Pet project showcasing a Dockerized MongoDB setup and a basic NestJS application for database interaction.
 
-## Tech Stack
-<list>
+<details>
+
+<summary> Tech Stack </summary>
+
 - NestJS
 - MongoDB
 - Docker
 - Docker Compose
 - Postman
-</list>
+
+</details>
 
 <details>
 
-<summary>
-##API Documentation
-</summary>
+<summary> Documentation </summary>
 
 ### Authentication Endpoints
 
